@@ -6,6 +6,7 @@ import VisualCharts from "./components/VisualCharts";
 import TransactionList from "./components/TransactionList";
 import StatementUploader from "./components/StatementUploader";
 import RecurringTransactions from "./components/RecurringTransactions";
+import WorkspacePanel from "./components/WorkspacePanel";
 import { jsPDF } from "jspdf";
 import {
   Landmark,
@@ -701,6 +702,13 @@ export default function App() {
           theme={theme}
           monthlyBudget={activeBudget}
           onUpdateBudget={handleUpdateBudget}
+        />
+
+        {/* Google Workspace Product Suite Integration Panel */}
+        <WorkspacePanel
+          activeStatement={activeStatement}
+          onImportStatement={handleImportStatement}
+          theme={theme}
         />
 
         {/* Dynamic section tabs */}
