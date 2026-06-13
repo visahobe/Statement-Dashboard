@@ -1,0 +1,6 @@
+{
+  "name": "Bank Statement Analyzer",
+  "description": "An interactive, multi-bank statement ledger tracker, financial trends analyst and OCR paste importer for bank accounts.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
